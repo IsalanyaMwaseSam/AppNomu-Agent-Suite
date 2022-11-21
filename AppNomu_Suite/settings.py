@@ -140,4 +140,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = "home"
 
 USERNAME = "sandbox"
-API_KEY = "bb59824a4cd4025208d1b5d01af7d09c0c16b72ff5a5b49163a72a94c2ebcf69"
+API_KEY =" "
