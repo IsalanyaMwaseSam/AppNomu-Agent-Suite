@@ -1,0 +1,23 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+{% load crispy_forms_tags%}
+{% block content %}
+<div class="heading">
+    <h3 style="margin-left: 50px; margin-top: 50px;">Top up Data</h3>
+</div>
+<div class="card" style="width: 60rem; height: 20rem; margin-left: 50px; background-clip: border-box; border: 1px solid rgba(34,41,47,.125); border-radius: 0.5rem;">
+    <div class="card-body" style="position: absolute;">
+     <form method="post" action="" style="margin-left: 200px;">
+        <div class="input-box">
+            {{form.tel_number|as_crispy_field}}
+        </div>
+        <br>
+        <div class="input-box">
+            {{form.amount|as_crispy_field}}
+        </div>
+        <br>
+        <input class="btn btn-primary" value="Send" style="width: 40%;">
+     </form>
+    </div>
+</div>
+{% endblock %}
